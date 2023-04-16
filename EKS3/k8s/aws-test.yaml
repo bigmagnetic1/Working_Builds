@@ -4,7 +4,7 @@ metadata:
   name: aws-test
   namespace: default
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::745596943124:role/test-oidc
+    eks.amazonaws.com/role-arn: arn:aws:iam::your acct# here:role/test-oidc
 ---
 apiVersion: v1
 kind: Pod

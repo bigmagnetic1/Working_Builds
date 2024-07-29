@@ -1,0 +1,19 @@
+[
+    {
+        "name"      : "catpipeline",
+        "image"     : "533267087165.dkr.ecr.us-west-2.amazonaws.com/catpipeline:latest",
+        "essential" : true,
+        "task_container_assign_public_ip" : true,
+        "health_check" : {
+            "port" : "traffic-port",
+            "path" : "/"
+        },
+        "portMappings" : [
+            {
+                "containerPort" : 80,
+                "hostPort"      : 80,
+                "protocol"      : "TCP"
+            }
+        ]
+    }
+]

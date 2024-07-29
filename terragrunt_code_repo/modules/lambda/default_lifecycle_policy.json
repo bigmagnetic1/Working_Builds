@@ -1,0 +1,17 @@
+{
+    "rules": [
+        {
+            "rulePriority": 10,
+            "description": "Expire images older that 1 day",
+            "selection": {
+                "tagStatus": "untagged",
+                "countType": "sinceImagePushed",
+                "countUnit": "days",
+                "countNumber": 1
+            },
+            "action": {
+                "tpye": "expire"
+            }
+        }
+    ]
+}
